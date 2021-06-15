@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+.card {
+  margin: 20px;
+  width: 18rem;
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 110%;
+  font-weight: bolder;
+  /* border-color: black; */
+  opacity: 0.6;
+  border-radius: 10%;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+.card:hover{
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.card-title {
+  margin-bottom: 15px;
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 130%;
+  font-weight: bolder;
+  color: black;
+}
+
+.tittle{
+  display:flex;
+  justify-content:space-around;
+  padding-right: 10px;
+}
+
+#closeIcon {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+  margin-top: 8px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.card-body {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.iconoC{
+  display: flex;
+  justify-content: center;
+}
+
+.temp{
+  padding-top: 24px;
+}
+
+
+
+.btn-close {background-image: linear-gradient(to right, #403A3E 0%, #BE5869  51%, #403A3E  100%)}
+.btn-close {
+   
+ 
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 50px;
+   display: block;
+ }
+
+ .btn-close:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
