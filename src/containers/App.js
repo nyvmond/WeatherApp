@@ -7,7 +7,7 @@ import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
 import Ciudad from '../components/Ciudad.jsx';
 
-const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -16,7 +16,7 @@ function App() {
   }
   function onSearch(ciudad) {
     //Llamado a la API del clima
-    fetch(`http://api.openweathermap.org/data/2.5/find?q=${ciudad}&appid=${apiKey}&units=metric`)
+    fetch(`http://api.openweathermap.org/data/2.5/find?q=${ciudad}&appid=${API_KEY}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
 
